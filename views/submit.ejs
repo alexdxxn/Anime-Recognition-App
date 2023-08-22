@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet" href="styles/main.css">
+    <title>Anime Recognition App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Your anime is: </h2>
+            <p><%= locals.animeName %></p>
+            <p>Episode <%= locals.episode %></p>
+        </div>
+
+        <div class="image">
+            <img src="<%= animeImage %>" alt="anime image">
+            
+        </div>
+
+        <div class="video">
+            <video controls="" autoplay="" name="media"><source src="<%= animeVideo %>" type="video/mp4"></video>
+            
+        </div>
+        
+        
+    </div>
+
+</body>
+
+
+
+
+</html>
