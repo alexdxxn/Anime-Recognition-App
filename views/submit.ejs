@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Anime Recognition App</title>
 </head>
 
-<body>
-    <div class="container">
-        <div>
+<body class="submit-body">
+    <div class="result-container">
+        <div class="result-header">
             <h2>Your anime is: </h2>
             <p><%= locals.animeName %></p>
             <p>Episode <%= locals.episode %></p>
-        </div>
-
-        <div class="image">
-            <img src="<%= animeImage %>" alt="anime image">
-            
+            <div class="image">
+                <img src="<%= animeImage %>" alt="anime image">
+                
+            </div>
         </div>
 
         <div class="video">
             <video controls="" autoplay="" name="media"><source src="<%= animeVideo %>" type="video/mp4"></video>
             
-        </div>
-        
-        
+        </div> 
+    </div>
+
+    <div class="back">
+        <h2><a href="/">Search another anime</a> </h2>
+
     </div>
 
 </body>

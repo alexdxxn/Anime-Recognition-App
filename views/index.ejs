@@ -4,28 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Anime Recognition App</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Upload an image to find your anime! 🔥</h1>
-            <p>You will get the anime name and the episode from your image</p>
+    <div class="background-image">
+        <div class="container">
+            <div class="header">
+                <h1>Upload an image to find your anime! 🔥</h1>
+                <p>You will get the anime name and the episode from your image</p>
+            </div>
+             
+            <div class="form-data">
+                <div class="form">
+                    <form action="/submit" id="myAnime" method="post" enctype="multipart/form-data">
+                        <label for="image">Upload your anime image <br>
+                            <input type="file" id="anime" name="userImage">
+                        </label>
+                    
+                </div>
+
+                <div class="btn">
+                    <button type="submit" id="submitBtn">Submit! 🍥</button>
+
+                </div>  
+            </form>    
+            </div>
+            
         </div>
         
 
-        <div>
-            <form action="/submit" id="myAnime" method="post" enctype="multipart/form-data">
-                <label for="image">Upload your anime image <br>
-                    <input type="file" id="anime" name="userImage">
-                </label>
-                <button type="submit" id="submitBtn">Submit</button>
-
-            </form>
-        </div>
     </div>
+
+    <footer>
+        <p>Coded by <a href="https://github.com/alexdxxn">Alexander Altuve</a>.</p>
+    </footer>
+    
 
 </body>
 

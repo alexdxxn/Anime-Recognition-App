@@ -11,7 +11,6 @@ app.use(express.static('public'));
 
 app.use(fileUpload());
 
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req,res) => {
@@ -43,7 +42,6 @@ app.post("/submit", async (req,res) =>{
     }
     
 })
-
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

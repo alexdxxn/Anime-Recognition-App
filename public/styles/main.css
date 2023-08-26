@@ -1,7 +1,159 @@
 body {
-    background-color: #13366c;
+    background-color: #000; /* Color de fondo negro para toda la página */
+    color: #fff; /* Color de texto blanco para mejor legibilidad */
+
+}
+
+.background-image{
+    background-image: url("https://i.pinimg.com/originals/54/f6/b6/54f6b6f2ae1a943856acc5d8479a1a9c.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Cambia este valor para ajustar la opacidad */
+    z-index: -1; /* Coloca el fondo por detrás del contenido */
+    display: flex; /* Utiliza flexbox para centrar vertical y horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura visible */
+
 }
 
 h1{
-    color: red;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+h2{
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+h1, h2, p, label, button {
+    font-family: 'Bangers', cursive;
+}
+
+label{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 4px;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semi-transparente */
+    padding: 10px 0px;
+    border-radius: 25px;
+    gap:5px;
+}
+
+.header{
+    margin-right: 30px;
+    margin-top: -40px;
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-left: 25%;
+    height: 40px;
+    width: 70%;
+    border-radius: 25px;
+    color: #fff;
+    background-color: red;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: -10px;
+}
+
+button:hover {
+    background-color: blue;
+    color: #fff;
+    transform: scale(1.1); /* Escala el botón al 110% en el estado de hover */
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    text-align: center;
+    margin-left: -10px;
+    border-top-right-radius: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+/* Submit page */
+
+.submit-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.result-container{
+    background-color: darkred;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+.result-container h2 {
+    margin-bottom: -5px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    justify-self: center;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.back h2{
+    transition: color 0.3s ease;
+}
+
+.back h2:hover{
+    transform: scale(1.1); /* Escala el botón al 110% en el estado de hover */
+    cursor: pointer;
 }
